@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	const notDoneTasks = document.getElementsByClassName('_notDone');
 	const allTasks = document.getElementsByClassName('taskEl');
 
+    localStorage.clear();
 	loadFromLocalStorage();
 
 	btnSave.addEventListener('click', () => {
