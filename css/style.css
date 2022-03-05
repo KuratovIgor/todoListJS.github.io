@@ -1,0 +1,188 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+.todo {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  top: 30%;
+  border: 2px solid #000;
+}
+.todo__main-block {
+  height: 150px;
+  background-color: #2F4F4F;
+}
+.todo__tittle {
+  padding: 20px 0 0 0;
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+}
+.todo__creator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 0 0 0;
+}
+.todo__creator input {
+  width: 650px;
+  height: 40px;
+  font-size: 20px;
+  border: 1px solid #000;
+}
+.todo__creator input:focus {
+  -webkit-box-shadow: 0 0 10px 2px deepskyblue;
+          box-shadow: 0 0 10px 2px deepskyblue;
+}
+.todo__creator button {
+  width: 250px;
+  height: 40px;
+  font-size: 20px;
+  border: 1px solid #000;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+.todo__creator button:hover {
+  background-color: #708090;
+  color: white;
+}
+.todo__list {
+  max-height: 300px;
+  height: 300px;
+  font-size: 20px;
+  overflow: scroll;
+}
+.todo .taskEl {
+  height: 50px;
+  padding: 12px 0 0 50px;
+  margin: 5px 10px 5px 10px;
+  border-radius: 5px;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  position: relative;
+  background-color: #F9F9F9;
+  border: 1px solid #EEE;
+}
+.todo .taskEl:hover {
+  -webkit-box-shadow: 0px 0px 5px 2px #000;
+          box-shadow: 0px 0px 5px 2px #000;
+}
+.todo .taskEl img {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  top: 12px;
+  right: 10px;
+}
+.todo .taskEl img:hover {
+  width: 30px;
+  height: 30px;
+}
+.todo ._done {
+  text-decoration: line-through;
+}
+.todo ._done:before {
+  content: "";
+  background: url("../img/li.png") 0 0 no-repeat;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 12px;
+  left: 10px;
+}
+.todo__filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 450px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 20px;
+  margin: 20px 0 20px 0;
+}
+.todo a {
+  color: black;
+}
+.todo a:hover {
+  font-size: 22px;
+  color: #345563;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
